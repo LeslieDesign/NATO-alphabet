@@ -5,4 +5,4 @@ phonetic_dict = {row.letter: row.code for (index, row) in data.iterrows()}
 
 answer = input("Enter a word: ").upper()
 output_list = [phonetic_dict[letter] for letter in answer]
-print(output_list)
+print(f"Your phonetic library for spelling this word is: {output_list}")
